@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "f8f3f1b1-eb37-4798-b200-b010a87c7a5d",
+		"name": "Task_Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45271580",
+		"_collection_link": "https://www.postman.com/santanumondal-1493239/workspace/smart-to-do-api/collection/45271580-f8f3f1b1-eb37-4798-b200-b010a87c7a5d?action=share&source=collection_link&creator=45271580"
+	},
+	"item": [
+		{
+			"name": "Create task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTU2ZDA5MWM0OWFjYjZhMjc0OTNhMTQiLCJpYXQiOjE3NjcyOTcyMDEsImV4cCI6MTc2NzMxODgwMX0.cO-cMnGNXqQpZwtitsmfrAwFjlVWvvglwl_Nb7Imgik",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"taskTitle\": \"Bank Account\",\r\n    \"taskDescription\": \"At 10 am i need to go bank atm problem purposes\",\r\n    \"status\": \"pending\",\r\n    \"priority\": \"low\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://aeka-advisors-assignment2-rest-backend.onrender.com/todo/api/v1/tasks",
+					"protocol": "https",
+					"host": [
+						"aeka-advisors-assignment2-rest-backend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todo",
+						"api",
+						"v1",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTU2ZDA5MWM0OWFjYjZhMjc0OTNhMTQiLCJpYXQiOjE3NjcyOTcyMDEsImV4cCI6MTc2NzMxODgwMX0.cO-cMnGNXqQpZwtitsmfrAwFjlVWvvglwl_Nb7Imgik",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://aeka-advisors-assignment2-rest-backend.onrender.com/todo/api/v1/tasks",
+					"protocol": "https",
+					"host": [
+						"aeka-advisors-assignment2-rest-backend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todo",
+						"api",
+						"v1",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTU1OWU1MjkyZmJmZWI4N2U1OTUzYTYiLCJpYXQiOjE3NjcyOTIzMTAsImV4cCI6MTc2NzI5MjY3MH0.vi5yJV3R0_E_Xn_KBoI5HbHg-nSGdNqUe477rD4Xmhw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"priority\":\"high\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://aeka-advisors-assignment2-rest-backend.onrender.com/todo/api/v1/tasks/69568fe45ba5aab5081b8b40",
+					"protocol": "https",
+					"host": [
+						"aeka-advisors-assignment2-rest-backend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todo",
+						"api",
+						"v1",
+						"tasks",
+						"69568fe45ba5aab5081b8b40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTU2ZDA5MWM0OWFjYjZhMjc0OTNhMTQiLCJpYXQiOjE3NjcyOTcyMDEsImV4cCI6MTc2NzMxODgwMX0.cO-cMnGNXqQpZwtitsmfrAwFjlVWvvglwl_Nb7Imgik",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://aeka-advisors-assignment2-rest-backend.onrender.com/todo/api/v1/tasks/6956d14dc49acb6a27493a1b",
+					"protocol": "https",
+					"host": [
+						"aeka-advisors-assignment2-rest-backend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todo",
+						"api",
+						"v1",
+						"tasks",
+						"6956d14dc49acb6a27493a1b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

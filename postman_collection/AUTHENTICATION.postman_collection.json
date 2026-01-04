@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "24091164-21f9-406b-8ea4-14ca5e79dd8b",
+		"name": "AUTHENTICATION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45271580",
+		"_collection_link": "https://www.postman.com/santanumondal-1493239/workspace/smart-to-do-api/collection/45271580-24091164-21f9-406b-8ea4-14ca5e79dd8b?action=share&source=collection_link&creator=45271580"
+	},
+	"item": [
+		{
+			"name": "signUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Santanu Mondal\",\r\n    \"email\": \"santanumondal4168@gmail.com\",\r\n    \"password\": \"welcome123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://aeka-advisors-assignment2-rest-backend.onrender.com/todo/api/v1/auth/signup",
+					"protocol": "https",
+					"host": [
+						"aeka-advisors-assignment2-rest-backend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todo",
+						"api",
+						"v1",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"santanumondal4168@gmail.com\",\r\n    \"password\": \"welcome123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://aeka-advisors-assignment2-rest-backend.onrender.com/todo/api/v1/auth/signin",
+					"protocol": "https",
+					"host": [
+						"aeka-advisors-assignment2-rest-backend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todo",
+						"api",
+						"v1",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
